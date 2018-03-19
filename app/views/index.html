@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        Test Badger page
+        <span class="heading-secondary">{{releaseVersion}}</span>
+      </h1>{{releaseVersion | log }}
+      <p>
+        Made of three pages only
+      </p>
+
+      <h2 class="heading-medium">Start the Service Now</h2>
+
+			<a href=questions.html> Questions Page</a>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

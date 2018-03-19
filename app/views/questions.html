@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Question page
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <a class="link-back" href=index.html> Back</a>
+
+      <h1 class="heading-large">Answer the Question:
+      </h1>
+
+      <form class="form" action="/url/of/next/page" method="post">
+
+      <form>
+  <fieldset>
+
+    <legend>
+      <h3 class="heading-medium">Do you like badgers?</h3>
+      <span class="body-text">Select ONE answer</span>
+    </legend>
+
+    <div class="multiple-choice">
+      <input id="waste-type-1" name="waste-types" type="checkbox" value="waste-animal">
+      <label for="waste-type-1">Yes</label>
+    </div>
+    <div class="multiple-choice">
+      <input id="waste-type-2" name="waste-types" type="checkbox" value="waste-mines">
+      <label for="waste-type-2">No</label>
+    </div>
+    <div class="multiple-choice">
+      <input id="waste-type-3" name="waste-types" type="checkbox" value="waste-farm-agricultural">
+      <label for="waste-type-3">Unsure</label>
+    </div>
+
+  </fieldset>
+</form>
+
+
+
+        <div class="form-group">
+          <input class="button" type="submit" value="Continue">
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
